@@ -1,0 +1,13 @@
+# Node modules
+/backend/node_modules/
+/backend/.env
+
+# Python artifacts
+/chroma_api/__pycache__/
+/chroma_api/.env
+/chroma_api/chroma_store/
+/chroma_api/.ipynb_checkpoints/
+
+# Misc
+*.log
+*.DS_Store
