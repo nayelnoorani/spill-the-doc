@@ -4,12 +4,14 @@ const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const uploadRoute = require("./routes/upload");
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use("/upload", uploadRoute);
 
 const upload = multer({ dest: "uploads/" });
 
